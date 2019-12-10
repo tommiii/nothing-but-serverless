@@ -1,0 +1,11 @@
+version: 0.1
+
+phases:
+  pre_build:
+    commands:
+    - npm install --silent --no-progress -g npm
+    - npm install --silent --no-progress -g serverless
+  build:
+    commands:
+      - npm run eslint
+      - npm run test

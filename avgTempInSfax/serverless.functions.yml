@@ -1,0 +1,10 @@
+avg-temp-in-sfax:
+  handler: avgTempInSfax/index.getAvgTempInSfax
+  iamRoleStatements:
+  
+  events:
+    - http:
+        path: avg-temp-in-sfax
+        method: GET
+        cors: true
+        

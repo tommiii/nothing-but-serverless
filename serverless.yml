@@ -1,0 +1,13 @@
+service: nothing-but-serverless
+  
+provider:
+  name: aws
+  runtime: nodejs10.x
+     
+plugins:
+  - serverless-dotenv-plugin
+  - serverless-offline
+
+functions:
+  current-temp-in-covilha: ${file(./currentTempInCovilha/serverless.functions.yml):current-temp-in-covilha}
+  avg-temp-in-sfax: ${file(./avgTempInSfax/serverless.functions.yml):avg-temp-in-sfax}

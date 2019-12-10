@@ -1,0 +1,13 @@
+current-temp-in-covilha:
+  handler: currentTempInCovilha/index.getCurrentTempInCovilha
+  custom:
+    dotenv:
+      include:
+        - MONGODB_URI 
+  
+  events:
+    - http:
+        path: current-temp-in-covilha
+        method: GET
+        cors: true
+        
