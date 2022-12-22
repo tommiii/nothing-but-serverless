@@ -16,7 +16,7 @@
     "mongoist": "^2.2.0",
     "node-fetch": "^2.6.0",
     "serverless-dotenv-plugin": "^2.1.1",
-    "serverless-offline": "^5.12.1"
+    "serverless-offline": "^12.0.3"
   },
   "devDependencies": {
     "eslint": "^6.7.2",
